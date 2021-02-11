@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<img src="{% static 'imgs/4.jpg' %}" style="width:1999px;height:1000px;position:absolute;z-index:-1">
+<body >
+<div style="padding-left:100px">
+
+<pre>  <h1> Users :                  Session time:</h1></pre>
+    <br>
+    <div style="padding-left:00px;max-height:700px;border:solid black 1px;overflow:auto;">
+    <h2>{% for i in user_name %}
+   <pre>  {{i.user_name}}                    {{i.session_time}}<br></pre>
+        {% endfor %}</h2>
+    </div>
+</div>
+</body>
+</html>
